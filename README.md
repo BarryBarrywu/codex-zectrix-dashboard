@@ -1,3 +1,5 @@
+
+
 <p align="center">
   <img src="./assets/readme/hero.svg" width="100%" alt="Codex Dashboard for ZECTRIX：在 NOTE4 电子纸上显示 Codex 额度与任务动态">
 </p>
@@ -81,7 +83,7 @@ cargo run --locked --release -- preview \
 cargo run --locked --release -- live-preview --output live-preview.png
 ```
 
-`live-preview` 不会连接 Codex Desktop 或 ZECTRIX 设备。此处从源码运行需要 Rust；安装正式插件则不需要。
+`live-preview` 通过本地 `codex app-server` 读取配额，不会连接 Codex Desktop 或 ZECTRIX 设备。此处从源码运行需要 Rust；安装正式插件则不需要。
 
 ## 隐私边界
 
